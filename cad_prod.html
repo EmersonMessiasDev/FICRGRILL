@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/estilocdaprod.css">
+    <link rel="shortcut icon" href="assets/img/logo.png">
+    <title>ADM</title>
+</head>
+<div class="video">
+    <video loop muted autoplay id="video" playsinline>
+        <source src="assets/img/video.mp4" type="video/mp4" class="img-fluid">
+        Tipo de arquivo não suportado
+    </video>
+</div>
+
+<body>
+    <div class="header">
+        <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                    <img src="assets/img/logo.png" alt="FicrGrill">
+                    <span>FicrGrill</span>
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <header>
+        <h1 id="titulo">Cadastro de Produto</h1>
+    </header>
+    <section id="prodCadastro">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-4">
+                    <div class="formCad">
+                        <form>
+                            <div class="mb-3">
+                                <label for="produto" class="form-label">Produto</label>
+                                <input type="text" class="form-control" id="inProduto" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="preco" class="form-label">Preço</label>
+                                <input type="text" class="form-control" id="inPreco">
+                            </div>
+                            <div class="col-12">
+                                <button type="button" class="btn btn-primary" id="btnCadastrar"
+                                    value="Cadastrar">Cadastrar</button>
+                                <button type="button" class="btn btn-primary" id="btnCancelar">Cancelar</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="prodCadastrados">
+        <div class="container">
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr id="center">
+                            <th scope="col">ID</th>
+                            <th scope="col">Produto</th>
+                            <th scope="col">Preço</th>
+                            <th scope="col">Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/cad_prod2.js"></script>
+</body>
+
+</html>

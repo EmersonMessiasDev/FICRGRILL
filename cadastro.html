@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/estilocad.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="assets/img/logo.png">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <div class="container" id="inicio">
+        <div class="header-container">
+            <div class="video">
+                <video loop muted autoplay id="video" playsinline>
+                    <source src="assets/img/video.mp4" type="video/mp4" class="img-fluid">
+                    Tipo de arquivo não suportado
+                </video>
+            </div>
+            <div class="caixa-cabeçaho">
+                <a href="index.html"> <img src="assets/img/restaurante123.png " width="100%" height="auto" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <h1>Cadastrar</h1>
+
+            <div id="msgError"></div>
+            <div id="msgSucess"></div>
+
+            <div class="label-float">
+                <input type="text" id="nome" placeholder="" required>
+                <label id="labelNome" for="nome">Nome</label>
+            </div>
+
+            <div class="label-float">
+                <input type="text" id="usuario" placeholder="" required>
+                <label id="labelUsuario" for="usuario">Usuário</label>
+            </div>
+
+            <div class="label-float">
+                <input type="password" id="senha" placeholder="" required>
+                <label id="labelSenha" for="senha">Senha</label>
+                <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+
+            <div class="label-float">
+                <input type="password" id="confirmSenha" placeholder="" required>
+                <label id="labelconfirmSenha" for="confirmSenha">Confirmar senha</label>
+                <i id="verConfSenha" class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+
+            <div class="justity-center">
+                <button id="btnCadastrar">Cadastrar</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+/*agrupando todos os estilos externos aqui pra não poluir o HTML*/
+@import url(../bootstrap/css/bootstrap.min.css);
+@import url(../css/responsive.css);
+@import url(../css/custom.css);
+@import url(../css/paginaMenu.css);

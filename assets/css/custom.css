@@ -266,17 +266,22 @@ div#social ul li {
     width: 32px; height: 32px;
     float: left;
     margin-right: 15px;
+    align-items: center;
+
 }
 div#social ul li a {
     background-image: url('../img/sprite-social.png');
     display: block;
     height: 100%;
     text-indent: -1400px;
+    align-items: center;
 }
 div#social {
     width: auto;
-    margin-left: 40%;
-    margin-right: 50%;
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    
 }
 #footer{
     background-image: linear-gradient(to right bottom, rgb(0, 0, 0), rgba(100, 5, 5, 0.938));
@@ -303,6 +308,8 @@ div#social ul li:nth-child(5) a:hover{background-position: -128px -32px;}
     left: 13rem;
     cursor: pointer;
     color: #0f0e0a;
+   
+
 }
 .footerTitle{
     color: #fff;
